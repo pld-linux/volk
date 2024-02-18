@@ -24,6 +24,7 @@ BuildRequires:	python3 >= 1:3.4
 BuildRequires:	python3-Mako >= 0.4.2
 BuildRequires:	rpm-build >= 4.6
 Requires:	orc >= 0.4.12
+Conflicts:	gnuradio < 3.9.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
