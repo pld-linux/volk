@@ -1,0 +1,11 @@
+--- volk-3.1.1/cmake/Modules/VolkBuildTypes.cmake.orig	2024-01-29 21:15:17.000000000 +0100
++++ volk-3.1.1/cmake/Modules/VolkBuildTypes.cmake	2024-02-18 14:31:31.617923137 +0100
+@@ -26,7 +26,7 @@ set(__INCLUDED_VOLK_BUILD_TYPES_CMAKE TR
+ # Defines the list of acceptable cmake build types. When adding a new
+ # build type below, make sure to add it to this list.
+ list(APPEND AVAIL_BUILDTYPES
+-  None Debug Release RelWithDebInfo MinSizeRel
++  PLD None Debug Release RelWithDebInfo MinSizeRel
+   DebugParanoid NoOptWithASM O2WithASM O3WithASM
+   ASAN
+ )
