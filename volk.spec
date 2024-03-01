@@ -5,12 +5,12 @@
 Summary:	Vector-Optimized Library of Kernels
 Summary(pl.UTF-8):	Vector-Optimized Library of Kernels - biblioteka jąder zoptymalizowanych wektorowo
 Name:		volk
-Version:	3.1.1
+Version:	3.1.2
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
-Source0:	https://www.libvolk.org/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	f361b834203bff052074d8661297ed83
+Source0:	https://www.libvolk.org/releases/%{name}-%{version}.tar.xz
+# Source0-md5:	04d83692c9292324f311ebe9b93bf2cf
 Patch0:		%{name}-pld.patch
 URL:		https://www.libvolk.org/
 BuildRequires:	cmake >= 3.8
@@ -23,6 +23,8 @@ BuildRequires:	pkgconfig
 BuildRequires:	python3 >= 1:3.4
 BuildRequires:	python3-Mako >= 0.4.2
 BuildRequires:	rpm-build >= 4.6
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 Requires:	orc >= 0.4.12
 Conflicts:	gnuradio < 3.9.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
