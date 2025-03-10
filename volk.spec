@@ -6,7 +6,7 @@ Summary:	Vector-Optimized Library of Kernels
 Summary(pl.UTF-8):	Vector-Optimized Library of Kernels - biblioteka jąder zoptymalizowanych wektorowo
 Name:		volk
 Version:	3.1.2
-Release:	1
+Release:	
 License:	LGPL v3+
 Group:		Libraries
 Source0:	https://www.libvolk.org/releases/%{name}-%{version}.tar.xz
