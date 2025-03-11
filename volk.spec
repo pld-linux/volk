@@ -6,7 +6,7 @@ Summary:	Vector-Optimized Library of Kernels
 Summary(pl.UTF-8):	Vector-Optimized Library of Kernels - biblioteka jąder zoptymalizowanych wektorowo
 Name:		volk
 Version:	3.1.2
-Release:	
+Release:	2
 License:	LGPL v3+
 Group:		Libraries
 Source0:	https://www.libvolk.org/releases/%{name}-%{version}.tar.xz
@@ -70,7 +70,7 @@ Dokumentacja API biblioteki VOLK.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 install -d build
@@ -108,7 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.md docs/CHANGELOG.md 
+%doc README.md docs/CHANGELOG.md
 %attr(755,root,root) %{_bindir}/volk-config-info
 %attr(755,root,root) %{_bindir}/volk_modtool
 %attr(755,root,root) %{_bindir}/volk_profile
